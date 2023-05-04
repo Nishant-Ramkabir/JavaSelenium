@@ -8,8 +8,9 @@ public class LaunchChrome {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nishant.ramkabir\\Desktop\\chromedriver_win32\\chromedriver.exe");
 		
+		//System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
+		Launcher.launch();
 		WebDriver d = new ChromeDriver();
 	  
 	

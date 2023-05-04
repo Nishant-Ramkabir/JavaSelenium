@@ -10,7 +10,8 @@ public class Locators {
 		// TODO Auto-generated method stub
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nishant.ramkabir\\Desktop\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\nishant.ramkabir\\Desktop\\chromedriver_win32\\chromedriver.exe");
+		Launcher.launch();
 		WebDriver d = new ChromeDriver();
 		
 		d.get("https://www.google.com");
