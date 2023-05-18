@@ -21,6 +21,13 @@ public class Locators {
 		Thread.sleep(200);
 		d.findElement(By.name("btnK")).submit();
 		
+		//1.Xpath
+		//2.Id
+		//3.Name
+		
+		
+		
+		
 		Thread.sleep(300);
 		d.quit();
 		
