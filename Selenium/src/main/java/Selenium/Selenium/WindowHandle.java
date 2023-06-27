@@ -19,6 +19,7 @@ public class WindowHandle {
 		
 		d.get("https://www.rrc.texas.gov/resource-center/research/gis-viewer/gis-popup-blocker-test/#");
 		d.findElement(By.xpath("//a[contains(text(),'RUN POPUP TEST')]")).click();
+		
 		Thread.sleep(3000);
 		Set <String> handlr = d.getWindowHandles();
 		Iterator<String> it =handlr.iterator();
