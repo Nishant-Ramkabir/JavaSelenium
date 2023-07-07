@@ -1,5 +1,6 @@
 package Selenium.Selenium;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -17,8 +18,8 @@ public class LaunchChrome {
 		WebDriver d = new ChromeDriver();
 		d.manage().window().maximize();
 		d.manage().deleteAllCookies();
-		d.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-		d.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		d.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  
 	
 		d.get("https://www.google.com");
