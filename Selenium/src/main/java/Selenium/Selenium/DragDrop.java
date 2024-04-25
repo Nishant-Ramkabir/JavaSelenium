@@ -17,7 +17,7 @@ public class DragDrop {
 		
 	}
 	
-	
+	//Method 1
 	public static void drag1() throws InterruptedException {
 		WebDriver d = new ChromeDriver();
 		d.get("https://jqueryui.com/droppable/");
@@ -32,7 +32,7 @@ public class DragDrop {
 		d.quit();
 		
 	}
-	
+	//Method 2
 	public static void drag2() throws InterruptedException {
 		WebDriver d1 = new ChromeDriver();
 		d1.get("https://jqueryui.com/droppable/");
