@@ -29,8 +29,9 @@ public class AlertPopup {
 		}
 		
 		Thread.sleep(4000);
+		// To accept the alert
 		a.accept();
-		
+		//To quit the alert
 		d.quit();
 		
 				
