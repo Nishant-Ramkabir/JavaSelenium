@@ -36,14 +36,12 @@ public class ScreenshotAndExplicitWait {
 	
 	public static void eWait() {
 		WebDriver d = new ChromeDriver();
-		
 		d.get("https://selectorshub.com/xpath-practice-page/");
 		d.manage().window().maximize();
-		
+
+		//Explicit Wait until the element located
 		WebElement elmt = new WebDriverWait(d,Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h3[contains(text(),'Useful Links for learning')]")));
-		
 		System.out.println("Text is "+elmt.getText());
-		
 		d.quit();
 		
 	}
@@ -51,13 +49,10 @@ public class ScreenshotAndExplicitWait {
 	
 	public static void SS() throws IOException {
 		WebDriver d = new ChromeDriver();
-		
 		d.get("https://selectorshub.com/xpath-practice-page/");
 		d.manage().window().maximize();
 		
-		
-		
-		//Take SS and store in file format 
+		//Take SS and store it in file format 
 		File src = ((TakesScreenshot) d).getScreenshotAs(OutputType.FILE);
 		//Copy the file to the destination
 		Files.copy(src, new File("E:\\Selenium\\abc.png"));
