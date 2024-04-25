@@ -18,14 +18,13 @@ public class Dropdown {
 		d.manage().window().maximize();
 		
 		WebElement Dropdown = d.findElement(By.cssSelector("#cars"));
+		//Select method to interact with the element of dropdown
 		Select s = new Select(Dropdown);
 		
 		s.selectByValue("audi");
-		
 		Thread.sleep(1000);
 		
 		s.selectByValue("opel");
-		
 		Thread.sleep(1000);
 		
 		d.quit();
