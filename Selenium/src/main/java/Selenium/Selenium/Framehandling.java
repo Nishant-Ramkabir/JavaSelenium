@@ -16,6 +16,7 @@ public class Framehandling {
 		d.manage().window().maximize();
 		Thread.sleep(3000);
 		
+		//To Switch to frame 
 		d.switchTo().frame("pact1");
 		Thread.sleep(3000);
 		d.findElement(By.id("lost")).click();
