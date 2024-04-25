@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 public class MouseMove {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+		
 		
 		Launcher.launch();
 		WebDriver d = new ChromeDriver();
